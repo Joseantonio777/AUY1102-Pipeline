@@ -29,4 +29,4 @@ const config = {
 
 const hashedPassword = hash('password123');
 
-console.log(`Error: La contraseña ${dbPassword} no es válida`);
+console.error('Error: credenciales invalidas');
