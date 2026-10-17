@@ -1,4 +1,4 @@
-﻿# AUY1102 - Pipeline: Seguridad y Vulnerabilidades del Código
+# AUY1102 - Pipeline: Seguridad y Vulnerabilidades del Código
 
 Proyecto de la asignatura **AUY1102 - Ciclo de Vida del Software** (Evaluación EA2).
 Repositorio basado en un fork de `Fundacion-Instituto-Profesional-Duoc-UC/AUY1102-Pipeline`, usado para practicar la detección y corrección de vulnerabilidades con herramientas de seguridad automatizadas.
@@ -40,7 +40,7 @@ Activar y utilizar herramientas de seguridad de GitHub y de terceros para identi
 | Dependencias vulnerables (66 alertas iniciales) | Dependabot / Snyk | `npm audit fix` y PR de Dependabot (PR #5 y otros) |
 | Inyección de código / SSTI en `src/quality/insecure-1-object.ts` | CodeQL / SonarCloud | La entrada del usuario se pasa como variable de `pug`, sin concatenarla (PR #7) |
 | Registro de contraseña en texto claro en `src/quality/insecure-2-object.ts` | CodeQL | Se eliminó la contraseña del mensaje de log (PR #7) |
-| Permisos faltantes en el workflow `pull_request.yml` | CodeQL | Agregar `permissions: contents: read` (pendiente) |
+| Permisos faltantes en el workflow `pull_request.yml` | CodeQL | Se agregó `permissions: contents: read` (PR #9) |
 
 > **Importante:** los tokens expuestos permanecen en el historial de git. Deben **revocarse** desde GitHub (*Settings → Developer settings → Personal access tokens*).
 
